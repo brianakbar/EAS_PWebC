@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+    --primary-color: #47b2e4;
+    --secondary-color: rgb(48, 99, 160);
+    --secondary-color-90opacity: rgba(48, 99, 161, 0.9);
+    --secondary-color-80opacity: rgba(48, 99, 161, 0.8);
+    --secondary-color-70opacity: rgba(48, 99, 161, 0.7);
+    --secondary-color-60opacity: rgba(48, 99, 161, 0.6);
+    --secondary-color-50opacity: rgba(48, 99, 161, 0.5);
+    --white: #FFF;
+    --white-opaque: rgba(255, 255, 255, 0.3);
+  
+    --text: #2B353F;
+  
+    --font-size-15: 15px;
+    --font-size-18: 18px;
+    --font-size-21: 21px;
+    --font-size-24: 24px;
+    --font-size-36: 36px;
+    --font-size-64: 64px;
+  }
+  
+  body {
+    font-family: "Cabin", sans-serif;
+    color: var(--text);
+    font-weight: 400;
+  }
+  
+  a {
+    color: var(--secondary-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #73c5eb;
+    text-decoration: none;
+  }
