@@ -997,7 +997,7 @@
       const imageList = info.imageList.map(items => ({
         name: 'images',
         type: 'listbox',
-        label: 'Image list',
+        label: 'image list',
         items
       }));
       const imageDescription = {
@@ -1009,7 +1009,7 @@
       const imageTitle = {
         name: 'title',
         type: 'input',
-        label: 'Image title'
+        label: 'image title'
       };
       const imageDimensions = {
         name: 'dimensions',
@@ -1021,7 +1021,7 @@
         items: [{
             name: 'isDecorative',
             type: 'checkbox',
-            label: 'Image is decorative'
+            label: 'image is decorative'
           }]
       };
       const classList = info.classList.map(items => ({
@@ -1399,7 +1399,7 @@
         collect(editor).then(info => {
           const state = createState(info);
           return {
-            title: 'Insert/Edit Image',
+            title: 'Insert/Edit image',
             size: 'normal',
             body: makeDialogBody(info),
             buttons: [
@@ -1468,7 +1468,7 @@
       });
       editor.ui.registry.addMenuItem('image', {
         icon: 'image',
-        text: 'Image...',
+        text: 'image...',
         onAction: Dialog(editor).open
       });
       editor.ui.registry.addContextMenu('image', { update: element => isFigure(element) || isImage(element) && !isPlaceholderImage(element) ? ['image'] : [] });

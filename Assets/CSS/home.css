@@ -411,7 +411,7 @@
 #hero {
   width: 100%;
   height: 100vh;
-  background-image: url("../Image/Hero\ Background.png");
+  background-image: url("../image/Hero\ Background.png");
   background-size: cover;
 }
 

@@ -592,8 +592,8 @@
 
     const internalSet = (dom, property, value) => {
       if (!isString(value)) {
-        console.error('Invalid call to CSS.set. Property ', property, ':: Value ', value, ':: Element ', dom);
-        throw new Error('CSS value must be a string: ' + value);
+        console.error('Invalid call to css.set. Property ', property, ':: Value ', value, ':: Element ', dom);
+        throw new Error('css value must be a string: ' + value);
       }
       if (isSupported(dom)) {
         dom.style.setProperty(property, value);
