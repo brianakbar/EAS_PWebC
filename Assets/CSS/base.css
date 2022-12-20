@@ -24,6 +24,7 @@
   
   body {
     font-family: "Cabin", sans-serif;
+    background: #f6f9ff;
     color: var(--text);
     font-weight: 400;
   }

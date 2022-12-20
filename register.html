@@ -34,23 +34,23 @@
                 </button>
   
                 <!-- General Form Elements -->
-                <form>
+                <form action="./proses-pendaftaran.php" method="POST" enctype='multipart/form-data'>
                   <div class="row mb-3">
                     <label for="inputNama" class="col-sm-2 col-form-label">Nama</label>
                     <div class="col-sm-10">
-                      <input id="inputNama" type="text" class="form-control">
+                      <input id="inputNama" name="nama" type="text" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
                     <div class="col-sm-10">
-                      <input id="inputEmail" type="email" class="form-control">
+                      <input id="inputEmail" name="email" type="email" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                     <div class="col-sm-10">
-                      <input id="inputPassword" type="password" class="form-control">
+                      <input id="inputPassword" name="password" type="password" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
@@ -62,60 +62,60 @@
                   <div class="row mb-3">
                     <label for="inputNIK" class="col-sm-2 col-form-label">NIK</label>
                     <div class="col-sm-10">
-                      <input id="inputNIK" type="text" class="form-control">
+                      <input id="inputNIK" type="text" name="nik" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputTempatLahir" class="col-sm-2 col-form-label">Tempat Lahir</label>
                     <div class="col-sm-10">
-                      <input id="inputTempatLahir" type="text" class="form-control">
+                      <input id="inputTempatLahir" name="tempat_lahir" type="text" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputDate" class="col-sm-2 col-form-label">Tanggal Lahir</label>
                     <div class="col-sm-10">
-                      <input id="inputDate" type="date" class="form-control">
+                      <input id="inputDate" type="date" name="tanggal_lahir" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputInstansi" class="col-sm-2 col-form-label">Instansi</label>
                     <div class="col-sm-10">
-                      <input id="inputInstansi" type="text" class="form-control">
+                      <input id="inputInstansi" type="text" name="instansi" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputPendidikan" class="col-sm-2 col-form-label">Pendidikan</label>
                     <div class="col-sm-10">
-                      <input id="inputPendidikan" type="text" class="form-control">
+                      <input id="inputPendidikan" type="text" name="pendidikan" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputJabatan" class="col-sm-2 col-form-label">Jabatan</label>
                     <div class="col-sm-10">
-                      <input id="inputJabatan" type="text" class="form-control">
+                      <input id="inputJabatan" type="text" name="jabatan" class="form-control">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputPasFoto" class="col-sm-2 col-form-label">Pas Foto</label>
                     <div class="col-sm-10">
-                      <input id="inputPasFoto" class="form-control" type="file" id="formFile">
+                      <input id="inputPasFoto" class="form-control" name="pas_foto" type="file" id="formFile">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputKTP" class="col-sm-2 col-form-label">KTP</label>
                     <div class="col-sm-10">
-                      <input id="inputKTP" class="form-control" type="file" id="formFile">
+                      <input id="inputKTP" class="form-control" name="ktp" type="file" id="formFile">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <label for="inputBerkas" class="col-sm-2 col-form-label">Berkas Pendukung</label>
                     <div class="col-sm-10">
-                      <input id="inputBerkas" class="form-control" type="file" id="formFile">
+                      <input id="inputBerkas" class="form-control" name="berkas_pendukung" type="file" id="formFile">
                     </div>
                   </div>
                   <div class="row mb-3">
                     <div class="col-sm-12 text-center">
-                      <button type="submit" class="btn btn-primary card-button">Submit Form</button>
+                      <button type="submit" value="Daftar" name="daftar" class="btn btn-primary card-button">Submit Form</button>
                   </div>
   
                 </form><!-- End General Form Elements -->

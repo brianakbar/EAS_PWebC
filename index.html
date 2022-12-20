@@ -33,19 +33,21 @@
             <span aria-hidden="true"></span>
           </button>
           <div class="col-9 mx-auto">
-            <div class="relative full-width mb-3">
-              <label for="email_login_input" class="login-img"><img class="img-fluid" src="Assets/Image/carbon_email.svg" alt="Search Logo"></label>
-              <input class="border border-rounded-sm full-width ps-5 pe-3 py-2" id="email_login_input" placeholder="Email">
-            </div>
-            <div class="relative full-width mb-3">
-              <label for="password_login_input" class="login-img"><img class="img-fluid" src="Assets/Image/arcticons_password.svg" alt="Search Logo"></label>
-              <input type="password" class="border border-rounded-sm full-width ps-5 pe-3 py-2" id="password_login_input" placeholder="Password">
-            </div>
-            <button type="button" class="btn btn-primary bg-light-blue border-rounded-sm border-light-blue full-width mb-3">Login</button>
-            <div>
-              <p class="inline-block">atau</p>
-              <a class="link-blue" href="#">Lupa Password</a>
-            </div>
+            <form action="./proses-login.php" method="POST">
+              <div class="relative full-width mb-3">
+                <label for="email_login_input" class="login-img"><img class="img-fluid" src="Assets/Image/carbon_email.svg" alt="Search Logo"></label>
+                <input name="email" class="border border-rounded-sm full-width ps-5 pe-3 py-2" id="email_login_input" placeholder="Email">
+              </div>
+              <div class="relative full-width mb-3">
+                <label for="password_login_input" class="login-img"><img class="img-fluid" src="Assets/Image/arcticons_password.svg" alt="Search Logo"></label>
+                <input type="password" name="password" class="border border-rounded-sm full-width ps-5 pe-3 py-2" id="password_login_input" placeholder="Password">
+              </div>
+              <button type="submit" name="login" class="btn btn-primary bg-light-blue border-rounded-sm border-light-blue full-width mb-3">Login</button>
+              <div>
+                <p class="inline-block">atau</p>
+                <a class="link-blue" href="#">Lupa Password</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -106,7 +108,7 @@
 
       <div class="section-title">
         <h2>Kontak</h2>
-        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <p>Untuk informasi lebih lanjut dapat membuat kartu pertanyaan dibawah ini.</p>
       </div>
 
       <div class="row">
@@ -115,23 +117,23 @@
           <div class="info">
             <div class="address">
               <i class="bi bi-geo-alt"></i>
-              <h4>Location:</h4>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <h4>Lokasi:</h4>
+              <p>Jl. Ahmad Yani No.152 B, Gayungan, Kec. Gayungan, Kota SBY, Jawa Timur 60235</p>
             </div>
 
             <div class="email">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com</p>
+              <p>KementerianKelautanPerikanan@comp.id</p>
             </div>
 
             <div class="phone">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+1 5589 55488 55s</p>
+              <p>(031) 8292326</p>
             </div>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            <iframe src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Department of Marine and Fisheries ahmad yani&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
           </div>
 
         </div>
@@ -140,11 +142,11 @@
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
             <div class="row">
               <div class="form-group col-md-6">
-                <label for="name">Your Name</label>
+                <label for="name">Nama Anda</label>
                 <input type="text" name="name" class="form-control" id="name" required>
               </div>
               <div class="form-group col-md-6">
-                <label for="name">Your Email</label>
+                <label for="name">Email Anda</label>
                 <input type="email" class="form-control" name="email" id="email" required>
               </div>
             </div>
@@ -153,7 +155,7 @@
               <input type="text" class="form-control" name="subject" id="subject" required>
             </div>
             <div class="form-group">
-              <label for="name">Message</label>
+              <label for="name">Pesan</label>
               <textarea class="form-control" name="message" rows="10" required></textarea>
             </div>
             <div class="my-3">
@@ -161,7 +163,7 @@
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
+            <div class="text-center"><button type="submit">Kirim Pesan</button></div>
           </form>
         </div>
 
