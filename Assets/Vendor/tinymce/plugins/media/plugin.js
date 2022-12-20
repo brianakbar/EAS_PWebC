@@ -818,7 +818,7 @@
           name: 'poster',
           type: 'urlinput',
           filetype: 'image',
-          label: 'Media poster (image URL)'
+          label: 'Media poster (Image URL)'
         });
       }
       const advancedTab = {

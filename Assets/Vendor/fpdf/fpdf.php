@@ -869,7 +869,7 @@ function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='')
 {
 	// Put an image on the page
 	if($file=='')
-		$this->Error('image file name is empty');
+		$this->Error('Image file name is empty');
 	if(!isset($this->images[$file]))
 	{
 		// First use of this image, get info
@@ -877,7 +877,7 @@ function Image($file, $x=null, $y=null, $w=0, $h=0, $type='', $link='')
 		{
 			$pos = strrpos($file,'.');
 			if(!$pos)
-				$this->Error('image file has no extension and no type was specified: '.$file);
+				$this->Error('Image file has no extension and no type was specified: '.$file);
 			$type = substr($file,$pos+1);
 		}
 		$type = strtolower($type);
@@ -1785,7 +1785,7 @@ protected function _putimage(&$info)
 	$this->_newobj();
 	$info['n'] = $this->n;
 	$this->_put('<</Type /XObject');
-	$this->_put('/Subtype /image');
+	$this->_put('/Subtype /Image');
 	$this->_put('/Width '.$info['w']);
 	$this->_put('/Height '.$info['h']);
 	if($info['cs']=='Indexed')

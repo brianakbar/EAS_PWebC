@@ -1,7 +1,7 @@
 <?php
 // memanggil library FPDF
 session_start();
-require('Assets/Vendor/fpdf/fpdf.php');
+require('assets/vendor/fpdf/fpdf.php');
 include 'config.php';
 // intance object dan memberikan pengaturan halaman PDF
 $pdf = new FPDF('l','mm','A4');
@@ -34,7 +34,7 @@ $pdf->Cell(90,9,$data['pendidikan'],0,1);
 $pdf->Cell(70,9,'Formasi Jabatan: ',0,0);
 $pdf->Cell(90,9,$data['jabatan'],0,1);
 
-$pdf->Image('Assets/Image/'.$data['pas_foto'], 220, 30, 60, 80);
+$pdf->Image('assets/image/'.$data['pas_foto'], 220, 30, 60, 80);
 
 
 $pdf->Output();

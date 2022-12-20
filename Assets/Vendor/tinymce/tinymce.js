@@ -1407,8 +1407,8 @@
 
     const internalSet = (dom, property, value) => {
       if (!isString(value)) {
-        console.error('Invalid call to css.set. Property ', property, ':: Value ', value, ':: Element ', dom);
-        throw new Error('css value must be a string: ' + value);
+        console.error('Invalid call to CSS.set. Property ', property, ':: Value ', value, ':: Element ', dom);
+        throw new Error('CSS value must be a string: ' + value);
       }
       if (isSupported$1(dom)) {
         dom.style.setProperty(property, value);
@@ -19108,7 +19108,7 @@
           progress(e.loaded / e.total * 100);
         };
         xhr.onerror = () => {
-          failure('image upload failed due to a XHR Transport error. Code: ' + xhr.status);
+          failure('Image upload failed due to a XHR Transport error. Code: ' + xhr.status);
         };
         xhr.onload = () => {
           if (xhr.status < 200 || xhr.status >= 300) {
@@ -19205,7 +19205,7 @@
     };
 
     const openNotification = editor => () => editor.notificationManager.open({
-      text: editor.translate('image uploading...'),
+      text: editor.translate('Image uploading...'),
       type: 'info',
       timeout: -1,
       progressBar: true

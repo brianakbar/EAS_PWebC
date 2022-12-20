@@ -20,24 +20,24 @@ if(isset($_POST['daftar'])){
     $berkas_pendukung_oripath = $_FILES['berkas_pendukung']['tmp_name'];
 
     $pas_foto_nama = date('dmYHis').$pas_foto_orinama;
-    $pas_foto_path = "Assets/Image/".$pas_foto_nama;
+    $pas_foto_path = "assets/image/".$pas_foto_nama;
 
     $ktp_nama = date('dmYHis').$ktp_orinama;
-    $ktp_path = "Assets/Image/".$ktp_nama;
+    $ktp_path = "assets/image/".$ktp_nama;
 
     $berkas_pendukung_nama = date('dmYHis').$berkas_pendukung_orinama;
-    $berkas_pendukung_path = "Assets/Image/".$berkas_pendukung_nama;
+    $berkas_pendukung_path = "assets/image/".$berkas_pendukung_nama;
 
     if (!move_uploaded_file($pas_foto_oripath, $pas_foto_path)) {
-        header('Location: index.html?status=gagal');
+        header('Location: index.php?status=gagal');
     }
 
     if (!move_uploaded_file($ktp_oripath, $ktp_path)) {
-        header('Location: index.html?status=gagal');
+        header('Location: index.php?status=gagal');
     }
 
     if (!move_uploaded_file($berkas_pendukung_oripath, $berkas_pendukung_path)) {
-        header('Location: index.html?status=gagal');
+        header('Location: index.php?status=gagal');
     }
 
     // buat query
@@ -48,10 +48,10 @@ if(isset($_POST['daftar'])){
     // apakah query simpan berhasil?
     if( $query ) {
         // kalau berhasil alihkan ke halaman index.php dengan status=sukses
-        header('Location: index.html?status=sukses');
+        header('Location: index.php?status=sukses');
     } else {
         // kalau gagal alihkan ke halaman indek.php dengan status=gagal
-        header('Location: index.html?status=gagal');
+        header('Location: index.php?status=gagal');
     }
 
 

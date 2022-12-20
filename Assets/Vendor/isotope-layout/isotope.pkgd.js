@@ -884,7 +884,7 @@ proto.getSize = function() {
 };
 
 /**
- * apply css styles to element
+ * apply CSS styles to element
  * @param {Object} style
  */
 proto.css = function( style ) {
@@ -1026,7 +1026,7 @@ proto.setPosition = function( x, y ) {
 // ----- transition ----- //
 
 /**
- * @param {Object} style - css
+ * @param {Object} style - CSS
  * @param {Function} onTransitionEnd
  */
 
@@ -1700,7 +1700,7 @@ proto.updateStagger = function() {
  */
 proto._positionItem = function( item, x, y, isInstant, i ) {
   if ( isInstant ) {
-    // if not transition, just set css
+    // if not transition, just set CSS
     item.goTo( x, y );
   } else {
     item.stagger( i * this.stagger );

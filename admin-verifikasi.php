@@ -43,7 +43,7 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/image/logo.png" alt="">
         <span class="d-none d-lg-block">Administrator</span>
       </a>
@@ -176,7 +176,7 @@
             </li>
 
             <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
+              <a class="dropdown-item d-flex align-items-center" href="./index.php">
                 <i class="bi bi-box-arrow-right"></i>
                 <span>Sign Out</span>
               </a>
@@ -323,7 +323,7 @@
                       echo "<tr>";
                       echo "<td>".$data['no_peserta']."</td>";
                       echo "<td>".$data['nik']."</td>";
-                      echo "<td><img src='Assets/Image/".$data['pas_foto']."' width='100' height='100'></td>";
+                      echo "<td><img src='assets/image/".$data['pas_foto']."' width='100' height='100'></td>";
                       echo "<td><a href='".$data['ktp']."' download>KTP</td>";
                       echo "<td><a href='".$data['pendukung']."' download>Berkas Pendukung</td>";
                       echo "<td><a href='proses-verifikasi.php?id=".$data['no_peserta']."'>Verifikasi</td>";
